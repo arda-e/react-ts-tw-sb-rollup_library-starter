@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "NODE_ENV=production rollup -c --bundleConfigAsCjs"
+    "build": "NODE_ENV=production rollup -c --bundleConfigAsCjs",
+    "postbuild":"node ./scripts/postBuild.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
