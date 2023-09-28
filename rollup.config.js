@@ -4,7 +4,6 @@ import typescript from '@rollup/plugin-typescript';
 import peerDeps from 'rollup-plugin-peer-deps-external';
 import { glob } from 'glob'
 
-
 const excludeExtensions = [
     'test.js',
     'test.ts',
