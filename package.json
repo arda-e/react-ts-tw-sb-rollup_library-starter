@@ -1,0 +1,8 @@
+{
+  "name": "react-ts-tw-sb-rollup_library-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/arda-e/react-ts-tw-sb-rollup_library-starter.git",
+  "author": "Meric Arda Eren <aeren@netas.com.tr>",
+  "license": "MIT"
+}
