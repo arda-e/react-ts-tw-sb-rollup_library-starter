@@ -9,6 +9,7 @@
   "files": [
     "dist"
   ],
+  "type":"module",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "NODE_ENV=production rollup -c --bundleConfigAsCjs",
