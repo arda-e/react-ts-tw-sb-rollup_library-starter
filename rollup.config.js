@@ -25,7 +25,7 @@ const excludeExtensions = [
 export default {
     input: inputFiles,
     output: {
-        dir: 'dist',
+        dir: 'dist/esm',
         format: 'esm',
         preserveModules: true,
         preserveModulesRoot: 'src',
@@ -38,7 +38,7 @@ export default {
         typescript({
           tsconfig: './tsconfig.build.json',
           declaration: true,
-          declarationDir: 'dist',
+          declarationDir: 'dist/esm',
         }),
     ],
     external: ['react', 'react-dom'],

@@ -1,7 +1,7 @@
 {
   "name": "react-ts-tw-sb-rollup_library-starter",
   "version": "1.0.4",
-  "main": "dist/index.js",
+  "main": "dist/esm/index.js",
   "files": [
     "dist",
     "README.md"
