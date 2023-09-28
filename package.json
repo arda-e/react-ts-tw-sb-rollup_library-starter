@@ -1,6 +1,6 @@
 {
   "name": "react-ts-tw-sb-rollup_library-starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/cjs/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/arda-e/react-ts-tw-sb-rollup_library-starter.git",
@@ -25,9 +25,7 @@
     "rollup": "^3.29.4",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
-  },
-  "peerDependencies": {
+    "typescript": "^5.2.2",
     "react": "^18.2.0"
   }
 }
