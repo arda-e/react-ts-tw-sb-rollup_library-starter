@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-const Button = () => {
+type ButtonVariant = 'primary' | 'secondary' | 'tertiary';
+
+interface IButtonProps {
+    text: string;
+    variant: ButtonVariant;
+    children?: ReactNode;
+}
+
+const Button = ({
+    text,
+    variant,
+    children
+}: IButtonProps) => {
     return (
         <>
-            button
+            {text}
         </>
     )
+}
+
+Button.displayName = 'button'
+Button.defaultProps = {
+    variant: 'primary',
+    text: 'button',
+    children: null
 }
 
 export default Button
