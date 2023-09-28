@@ -2,6 +2,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import peerDeps from 'rollup-plugin-peer-deps-external';
+import postcss from 'rollup-plugin-postcss'
 import { glob } from 'glob'
 
 const excludeExtensions = [
@@ -39,6 +40,13 @@ export default {
           tsconfig: './tsconfig.build.json',
           declaration: true,
           declarationDir: 'dist/types',
+        }),
+        postcss({
+          config: './postcss.config.cjs', // Specify the updated config file
+          plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+            ]
         }),
     ],
     external: ['react', 'react-dom'],

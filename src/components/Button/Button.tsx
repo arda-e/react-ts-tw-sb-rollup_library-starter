@@ -15,7 +15,9 @@ const Button = ({
 }: IButtonProps) => {
     return (
         <>
-            {text}
+            <div className="bg-red-500">
+                {text}
+            </div>
         </>
     )
 }
