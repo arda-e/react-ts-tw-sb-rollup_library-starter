@@ -1,20 +1,53 @@
 {
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",                                
-      "esModuleInterop": true,                                                     
-      "forceConsistentCasingInFileNames": true,
-      "strict": true,                                    
-      "skipLibCheck": true,
-      "rootDir": ".",
-      "jsx": "react",
-      "declaration": true,
-      "declarationDir": "types",
-      "sourceMap": true,
-      "outDir": "dist",
-      "moduleResolution": "Node",
-      "allowSyntheticDefaultImports": true,
-      "emitDeclarationOnly": true
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "baseUrl": "src/",
+    "skipLibCheck": true,
+    "paths": {
+      "common/*": [
+        "common/*"
+      ],
+      "components/*": [
+        "components/*"
+      ],
+      "hooks/*": [
+        "hooks/*"
+      ],
+      "utils/*": [
+        "utils/*"
+      ],
+      "styles/*": [
+        "styles/*"
+      ]
     }
-  }
-  
+  },
+  "include": [
+      "src/**/*"
+    ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest"
+  ],
+  "types": [
+    "typePatches"
+  ]
+}

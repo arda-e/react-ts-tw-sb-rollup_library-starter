@@ -1,19 +1,20 @@
 {
   "name": "react-ts-tw-sb-rollup_library-starter",
   "version": "1.0.2",
-  "main": "dist/cjs/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "outputDir": "./dist",
   "repository": "https://github.com/arda-e/react-ts-tw-sb-rollup_library-starter.git",
   "author": "Meric Arda Eren <aeren@netas.com.tr>",
   "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "type":"module",
+  "type": "module",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "NODE_ENV=production rollup -c --bundleConfigAsCjs",
-    "postbuild":"node ./scripts/postBuild.js"
+    "postbuild": "node ./scripts/postBuild.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
@@ -21,11 +22,14 @@
     "@rollup/plugin-typescript": "^11.1.4",
     "@types/node": "^20.7.1",
     "@types/react": "^18.2.23",
+    "react": "^18.2.0",
     "rimraf": "^5.0.5",
     "rollup": "^3.29.4",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "react": "^18.2.0"
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "glob": "^10.3.10"
   }
 }

@@ -1,0 +1,25 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "rootDir": "src",
+      "skipLibCheck": false
+    },
+    "exclude": [
+      "node_modules",
+      "build",
+      "dist",
+      "scripts",
+      "acceptance-tests",
+      "webpack",
+      "jest",
+      "src/stories/**",
+      "**/*.stories.js",
+      "**/*.stories.jsx",
+      "**/*.stories.ts",
+      "**/*.stories.tsx",
+      "**/*.test.js",
+      "**/*.test.jsx",
+      "**/*.test.ts",
+      "**/*.test.tsx",
+    ]
+  }
