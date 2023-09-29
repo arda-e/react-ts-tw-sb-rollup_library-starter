@@ -42,6 +42,7 @@ export default {
           declarationDir: 'dist/types',
         }),
         postcss({
+          inject: false,
           config: './postcss.config.cjs', // Specify the updated config file
           plugins: [
                 require('tailwindcss'),

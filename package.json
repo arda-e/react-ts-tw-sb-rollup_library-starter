@@ -1,6 +1,6 @@
 {
   "name": "react-ts-tw-sb-rollup_library-starter",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "repository": "https://github.com/arda-e/react-ts-tw-sb-rollup_library-starter.git",
