@@ -39,7 +39,7 @@ export default {
         typescript({
           tsconfig: './tsconfig.build.json',
           declaration: true,
-          declarationDir: 'dist/types',
+          declarationDir: 'dist',
         }),
         postcss({
           inject: false,
