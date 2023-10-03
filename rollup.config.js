@@ -17,7 +17,6 @@ const excludeExtensions = [
   ];
   
   const inputFiles = [
-    './src/index.ts',
     ...glob.sync('./src/**/*.{ts,tsx}', {
       ignore: excludeExtensions.map(ext => `**/*${ext}`),
     }),
@@ -43,12 +42,12 @@ export default {
           sourceMap:false,
         }),
         postcss({
-          inject: false,
-          config: './postcss.config.cjs', // Specify the updated config file
+          extract: true,
+          config: './postcss.config.cjs',
           plugins: [
-                require('tailwindcss'),
-                require('autoprefixer'),
-            ]
+            require('tailwindcss')('./tailwind.config.js'),
+            require('autoprefixer'),
+          ],
         }),
     ],
     external: ['react', 'react-dom'],
