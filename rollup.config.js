@@ -30,7 +30,7 @@ export default {
         format: 'esm',
         preserveModules: true,
         preserveModulesRoot: 'src',
-        sourcemap: true,
+        sourcemap: false,
     },
     plugins:[
         peerDeps(),
@@ -40,6 +40,7 @@ export default {
           tsconfig: './tsconfig.build.json',
           declaration: true,
           declarationDir: 'dist',
+          sourceMap:false,
         }),
         postcss({
           inject: false,
