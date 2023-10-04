@@ -41,8 +41,9 @@ export default {
           declarationDir: 'dist',
           sourceMap:false,
         }),
+
         postcss({
-          extract: true,
+          extract: 'styles/tailwind.css',
           config: './postcss.config.cjs',
           plugins: [
             require('tailwindcss')('./tailwind.config.js'),
