@@ -6,11 +6,14 @@
   "repository": "https://github.com/arda-e/react-ts-tw-sb-rollup_library-starter.git",
   "author": "Meric Arda Eren <aeren@netas.com.tr>",
   "license": "MIT",
-  "files": [ "dist"],
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "NODE_ENV=production rollup -c --bundleConfigAsCjs"
+    "build": "NODE_ENV=production rollup -c --bundleConfigAsCjs",
+    "postbuild": "node scripts/postBuild_add-tailwind"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
@@ -31,5 +34,8 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
+  },
+  "dependencies": {
+    "rollup-plugin-import-css": "^3.3.4"
   }
 }
